@@ -1,4 +1,4 @@
-# image_encryption.py
+
 from PIL import Image
 import numpy as np
 
@@ -20,7 +20,7 @@ class ImageEncryptor:
         # Save encrypted image
         encrypted_img = Image.fromarray(encrypted_arr)
         encrypted_img.save(output_path)
-        print(f"✅ Image encrypted and saved as {output_path}")
+        print(f" Image encrypted and saved as {output_path}")
 
     def decrypt(self, input_path: str, output_path: str):
         # Load encrypted image
@@ -39,7 +39,7 @@ class ImageEncryptor:
         print(f" Image decrypted and saved as {output_path}")
 
 
-# ---------------- Main Program ----------------
+
 if __name__ == "__main__":
     print("===== Simple Image Encryption Tool =====")
     print("1. Encrypt Image")
@@ -57,3 +57,4 @@ if __name__ == "__main__":
         encryptor.decrypt(path, "decrypted.png")
     else:
         print(" Invalid choice")
+
